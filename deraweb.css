@@ -1,0 +1,164 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(50, 150, 200);
+}
+.webpage{
+    width:70%;
+   margin:auto;
+   overflow:hidden;
+}
+ul{
+    margin:0;
+    padding:0;
+}
+.button_1{
+    height:25px;
+    background: Blue;
+    border: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: white;
+}
+.dark{
+    padding:15px;
+    background:Brown;
+    color: orange;
+    margin-top: 10px;
+    margin-button: 10px;
+}
+header{
+    background:rgb(50, 150, 200);
+    color: white;
+    padding-top:10px;
+    min-height: 10px;
+    border-bottom:white 5px solid;
+}
+header a{
+    color: white;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+header li{
+    float:left;
+    display:inline;
+    padding:0 5px 0 5px;
+}
+header #branding{
+    float:left;
+}
+header nav{
+    float: right;
+    margin-top:15px
+}
+header .current a{
+    color: Blue;
+    font-weight:bold;
+}
+header a:hover{
+    color: brown;
+    font-weight: bold;
+}
+#showcase{
+    min-height:350px;
+    background-image:url(IMG/caking.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: orange;
+    font-weight: bold;  
+}
+#showcase h2{
+    margin-top:80px;
+    margin-bottom:10px;
+    font-size:40px;
+}
+#showcase p{
+   font-size:10px; 
+}
+#newsletter{
+    color:orange;
+    padding: 2px;
+    background: yellow;
+}
+#newsletter h2{
+    float: left;
+}
+#newsletter form{
+    float: right;
+    margin-top: 10px;
+}
+#newsletter input[type="email"]{
+    height:15px;
+    padding:3px;
+    width: 200px;
+}
+#boxes{
+    margin-top:20px;
+}
+#boxes .box{
+    float:left;
+    text-align:center;
+    padding:30px;
+    width: 20%;
+}
+aside#sidebar{
+    float:right;
+    width: 15%;
+    margin-top:5px;
+}
+aside#sidebar .quote input, aside#sidebar quote textarea{
+    width:30%;
+    padding: 10px;
+}
+article#main-col{
+    float:left;
+    width: 60%;
+}
+ul#services li{
+    list-style:none;
+    padding:10px ;
+    margin-button:3px;
+    border:white 3px solid;
+    color:white;
+    background: blue;
+}
+footer{
+    padding:15px;
+    margin-top:15px;
+    color:orange;
+    background: yellow;
+    text-align:center;
+}
+
+@media(max-width: 768px){
+    header  #branding,
+    header nav,
+    header nav li,
+    #newsletter  h1,
+    #newsletter form,
+    #boxes .box,
+    article#main-col
+    aside#sidebar{
+    float: none;
+    text-align: center;
+    width: 100%  ;
+}
+
+header{
+    padding-bottom: 20px ;
+}
+#showcase h1{
+    margin-top:40px;
+}
+#newsletter button, quote button{
+    display:block;
+    width: 100%;
+}
+#newsletter form input[type="email"], quote input quote textarea{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+}
